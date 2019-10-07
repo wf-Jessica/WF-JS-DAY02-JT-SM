@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+function weatherRandom() { 
+
+res = Math.ceil((Math.random() * 30) - 5)
+outp = '' 
+
+if (res >= -5 && res <= 10) {
+	outp = "The weather is cold."
+
+}
+
+else {
+	outp = "The weather is moderate."
+}
+console.log(res)
+console.log(outp)
+
+}
+
+weatherRandom();
+</script>
+</body>
+</html>
