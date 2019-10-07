@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+function schoolCheck() {
+var Martin = 76
+var Thomas = 85
+var Klaus = 65
+var Maria = 93
+var David = 81
+
+var school = [Martin, Thomas, Klaus, Maria, David]
+var schoolavg = school.reduce((a,b) => a + b, 0) / school.length
+
+if(schoolavg < 60) {
+	document.write("The class average is " + schoolavg + " , the class average grade is thus F")
+	return;
+}
+
+if(schoolavg < 70) {
+	document.write("The class average is " + schoolavg + " , the class average grade is thus D")
+	return;
+}
+
+if(schoolavg < 80) {
+	document.write("The class average is " + schoolavg + " , the class average grade is thus C")
+	return;
+}
+
+if(schoolavg < 90) {
+	document.write("The class average is " + schoolavg + " , the class average grade is thus B")
+	return;
+}
+
+if(schoolavg < 100) {
+	document.write("The class average is " + schoolavg + " , the class average grade is thus A")
+	return;
+}
+
+}
+
+schoolCheck();
+
+</script>
+</body>
+</html>
